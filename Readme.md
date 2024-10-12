@@ -6,15 +6,15 @@
 if windows.
 
 ```sh
-docker build -t low-level-programming .
-docker run -it -v $PWD/code:/code low-level-programming
+docker build --platform=linux/amd64 -t low-level-programming .
+docker run -it --platform=linux/amd64 -v $PWD/code:/code low-level-programming
 ```
 
 in container.
 
 ```sh
 cd code
-nasm -felf64 hello.asm -o hello.o
+nasm -f elf64 hello.asm -o hello.o
 ld -o hello hello.o
 ./hello
 ```
