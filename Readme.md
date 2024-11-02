@@ -7,7 +7,7 @@ if windows.
 
 ```sh
 docker build --platform=linux/amd64 -t low-level-programming .
-docker run -it --platform=linux/amd64 -v $PWD/code:/code low-level-programming
+docker run -it --platform=linux/amd64 -v ./code:/code low-level-programming
 ```
 
 in container.

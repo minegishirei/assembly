@@ -1,4 +1,4 @@
-global _start
+
 
 section .text
 _start:
@@ -15,4 +15,4 @@ _start:
 
 section .data
 
-    texta: db 'Hello world'
+    texta: db 'Hello これだあああ3333333'
